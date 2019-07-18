@@ -2,8 +2,8 @@
     pageEncoding="utf-8"%>
 <%@ page import = "java.sql.*" %>
 
-<%  String product_id = request.getParameter("p_id");
-	String product_name = request.getParameter("name");
+<%  String product_id = request.getParameter("product_id");
+	String product_name = request.getParameter("product_name");
 	String price = request.getParameter("price");
 	String stock = request.getParameter("stock");
 	

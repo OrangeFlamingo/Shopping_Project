@@ -45,7 +45,7 @@
 				} catch(Exception ignored) { }
 			}
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("EditForm.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("Editform.jsp");
 		dispatcher.forward(request, response);
 	%>
 
