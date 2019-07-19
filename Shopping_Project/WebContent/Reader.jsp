@@ -33,8 +33,8 @@
 			
 			request.setAttribute("P_ID", p_id);
 			request.setAttribute("NAME", name);
-			request.setAttribute("PRICE", new Integer(price));
-			request.setAttribute("STOCK", new Integer(stock));
+			request.setAttribute("PRICE", price);
+			request.setAttribute("STOCK", stock);
 			
 			} finally{
 				try{
