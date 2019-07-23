@@ -10,12 +10,13 @@
 
 <body>
 	<h2>상품 상세</h2>
+	<form>
 	<div>
 		<img src="img.png" width="200px" style="float:left">
-		<ul style="float:left; list-style:none;">
-			<li>사과 5kg<br></li>
-			<li>사과는 너무나 맛있어서 집에 가고 싶어했어요. 당신의 집에☆  <br> 뭐야 이 사과가 왜 여깄어 우리 집 열쇠 돌려줘요 </li>
-			<li>판매가격 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16570  원<br></li>
+		<ul style="float:left; list-style:none;" >
+			<li><input type="text" required autofocus> <button>중복 확인</button></li>
+			<li><input type="textarea"></li>
+			<li>판매가격 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type = "text"> 원<br></li>
 			<li>구매 수량 
 				<select name = "sort">
 					<option value="">주문 개수</option>
@@ -36,10 +37,9 @@
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 	<div style="float:clear">
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<button>바로 구매</button>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button>장바구니</button>
-		<br><br><br>
-		<button>돌아가기</button>
+		<button type="submit">저장 하기</button>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button>취소하기</button>
 	</div>
+	</form>
 </body>
 
 </html>
