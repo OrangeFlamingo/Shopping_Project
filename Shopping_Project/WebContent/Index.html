@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="kr">
+<html lang="kr" ng-app>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 	<meta name="generator" content="Jekyll v3.8.5">
+
+	<link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+	
 	<script src="angular.min.js"></script>
     <title>냠냠 과일 파티</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
-
-    <!-- Bootstrap core CSS -->
-<link href="/../dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/signin.css">
 
 
     <style>
@@ -30,8 +30,11 @@
           font-size: 3.5rem;
         }
       }
-    </style>
-    <link href="signin.css" rel="stylesheet">
+	</style>
+	
+	<link href="signin.css" rel="stylesheet">
+	<script src="app.js"></script>
+	
   </head>
   <body class="text-center">
     <form class="form-signin">
@@ -41,12 +44,7 @@
   		<label for="inputPassword" class="sr-only">비밀번호</label>
   		<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
 	  <br>
-	<div class="checkbox mb-3">
-	<label>
-      <input type="checkbox" value="remember-me"> 아이디 기억
-    </label>
-	</div>
-	 
+
 	<br><hr widht="30%"><br>
 	
 	<button class="btn btn-lg btn-primary btn-block" type="submit">로그인</button>
