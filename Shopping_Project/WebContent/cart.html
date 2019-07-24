@@ -1,52 +1,86 @@
 <!doctype html>
 <html lang="kr">
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v3.8.5">
+
 	<link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+	
 	<script src="angular.min.js"></script>
     <title>냠냠 과일 파티</title>
+
     <link rel="stylesheet" href="/signin.css">
-	<meta charset="utf-8">
+
+ 	<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+	<link href="../dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="../dist/css/bootstrap.bundle.min.js" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
+
+<style>
+ body {margin:20px;}
+ a { float:right; }
+</style>
 
 <body>
 	<h1>장바구니</h1>
-	<div>
-		<img src="img.png" width="100px" style="float:left">
-		
-		<ul style="float:left; list-style:none;">
-			<li>사과 5kg</li>
-			<li>2 개</li>
-			<li>33140  원</li>
-		</ul>
-		<button style="float:right">상품 삭제</button>
-	</div>
-	<br><br><br><br><br><br>
-	<hr style="clear:left">
-	<div>
-		<img src="img.png" width="100px" style="float:left">
-		<ul style="float:left; list-style:none;">
-			<li>오렌지 2kg</li>
+	<hr>
+	<div class="row">
+        <div class="col-md-3" align="center">
+          <a href="#">
+            <img src="img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <ul style="float:left; list-style:none;">
+			<li><h3>사과 5kg</h3></li>
 			<li>1 개</li>
 			<li>19800 원</li>
 		</ul>
-		<button style="float:right">상품 삭제</button>
-	</div>
-	<br><br><br><br><br><br>
-	<hr style="clear:left">
-	<div>
-		<img src="img.png" width="100px" style="float:left">
-		<ul style="float:left; list-style:none;">
-			<li>사과 5kg</li>
-			<li>2 개</li>
-			<li>33140 원</li>
+        	<a class="btn btn-primary" href="#">상품 삭제</a>
+        </div>
+      </div>
+	<br><hr>
+	
+	<div class="row">
+        <div class="col-md-3" align="center">
+          <a href="#">
+            <img src="img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <ul style="float:left; list-style:none;">
+			<li><h3>오렌지 2kg</h3></li>
+			<li>1 개</li>
+			<li>19800 원</li>
 		</ul>
-		<button style="float:right">상품 삭제</button>
-	</div>
-	<br><br><br><br><br><br> 
-	<hr style="clear:left">
+          <a class="btn btn-primary" href="#">상품 삭제</a>
+        </div>
+      </div>
+	<br><hr>
+	
+	<div class="row">
+        <div class="col-md-3" align="center">
+          <a href="#">
+            <img src="img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <ul style="float:left; list-style:none;">
+			<li><h3>사과 5kg</h3></li>
+			<li>2 개</li>
+			<li>39600 원</li>
+		</ul>
+          <a class="btn btn-primary" href="#">상품 삭제</a>
+        </div>
+      </div>
+	<br><hr>
 
-	<label>합계 : 86080 원 </label>
-	<button style="float:right">전체 상품 구매</button>
+	<label>합계 : - 원 </label>
+	<button class="btn btn-primary" style="float:right">전체 상품 구매</button>
 </body>
 
 </html>

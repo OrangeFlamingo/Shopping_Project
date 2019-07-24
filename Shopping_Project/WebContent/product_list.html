@@ -1,39 +1,125 @@
 <!doctype html>
 <html lang="kr">
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v3.8.5">
+
 	<link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+	
 	<script src="angular.min.js"></script>
     <title>냠냠 과일 파티</title>
+
     <link rel="stylesheet" href="/signin.css">
-	<meta charset="utf-8">
+
+ 	<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+	<link href="../dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="../dist/css/bootstrap.bundle.min.js" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
-	<form>
-	<label>정렬 방법 : </label>
-	<select name = "sort">
-		<option value="">정렬</option>
-    	<option value="abc">가나다순</option>
-    	<option value="price">높은 가격순</option>
-		<option value="reg">들록 날짜순</option>
-	</select>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<label>상품 검색 </label><input type="text" required autofocus>
-	 
-	<hr>
-	<br>
-	데이터 연동 아직 안함 SPA로 만들기 전까지  임시로 붙여만두기
-	<div>
-		<img src="img.png" width="100px" style="float:left">
-		<ul style="float:left; list-style:none;">
-			<li>사과 5kg</li>
-			<li>16570  원</li>
-			<li>빨갛고 동그랗고 맛있는 사과</li>
-		</ul>
-	</div>
-	<br><br><br><br><br><br>
-	<hr style="clear:left">
-</form>
-</body>
+    <div class="container">
 
-</html>
+    <h1 class="my-4">냠냠 과일 파티
+		<small>상품 목록</small>
+	</h1>      
+
+	  <form class="form-inline my-2 my-lg-0">
+      	<input class="form-control mr-sm-2" type="text" placeholder="상품 검색">
+     	<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+	  <hr>
+
+      <div class="row">
+        <div class="col-md-3" align="center">
+          <a href="#">
+            <img src="img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3>Project One</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+          <a class="btn btn-primary" href="#">View Project</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-md-3" align="center">
+          <a href="#">
+            <img src="img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3>Project Two</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+          <a class="btn btn-primary" href="#">View Project</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-md-3" align="center">
+          <a href="#">
+            <img src="img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3>Project Three</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+          <a class="btn btn-primary" href="#">View Project</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+
+        <div class="col-md-3" align="center">
+          <a href="#">
+            <img src="img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3>Project Four</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+          <a class="btn btn-primary" href="#">View Project</a>
+        </div>
+      </div>
+
+	  <hr>
+	  
+	  <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only"> 이전 </span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only"> 다음 </span>
+          </a>
+        </li>
+      </ul>
+
+
+    </div>
+	</body>
+	</html>

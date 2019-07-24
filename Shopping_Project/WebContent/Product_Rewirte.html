@@ -1,44 +1,67 @@
 <!doctype html>
 <html lang="kr">
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v3.8.5">
+
 	<link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+	
 	<script src="angular.min.js"></script>
     <title>냠냠 과일 파티</title>
+
     <link rel="stylesheet" href="/signin.css">
-	<meta charset="utf-8">
+
+ 	<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+	<link href="../dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="../dist/css/bootstrap.bundle.min.js" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
-	<h2>상품 상세</h2>
+	<h1 class="my-4">냠냠 과일 파티
+		<small>상품 상세</small>
+	</h1>
+
+		  <hr>
 	<form>
-	<div>
-		<img src="img.png" width="200px" style="float:left">
-		<ul style="float:left; list-style:none;" >
-			<li><input type="text" required autofocus> <button>중복 확인</button></li>
-			<li><input type="textarea"></li>
-			<li>판매가격 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type = "text"> 원<br></li>
-			<li>구매 수량 
-				<select name = "sort">
-					<option value="">주문 개수</option>
-    				<option value="1">1</option>
-    				<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-    				<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-    				<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-				</select>
-			</li>
-		</ul>
-	</div>
-	<br><br><br><br><br><br><br><br><br><br><br><br>
-	<div style="float:clear">
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<button type="submit">저장 하기</button>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button>취소하기</button>
-	</div>
+		<div class="row">
+			<div class="col-md-3" align="center">
+			<a href="#">
+				<img src="img.png">
+				
+			</a>
+			</div>
+			<div class="col-md-9">
+			<label> 상 품 명&nbsp;&nbsp;&nbsp;&nbsp; </label><input type="text" required autofocus><br>
+			<label> 상품설명&nbsp;&nbsp; </label><input type="textarea"><br>
+			<label> 상품금액&nbsp;&nbsp; </label><input type="text"><br>
+			<label> 주문개수 :  </label>	 
+			<select name = "sort">
+						<option value=""> - </option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select> 
+			<br>
+			<label> 상품사진&nbsp;&nbsp; </label><input type="file" name="product_image">
+				<br>
+			</div>
+		</div>
+		<hr>
+		<div>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button class="btn btn-primary" href="#"type="submit">저장 하기</button>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="btn btn-primary" href="#">취소하기</button>
+		</div>
 	</form>
 </body>
 
