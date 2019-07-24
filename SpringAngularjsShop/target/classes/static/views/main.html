@@ -1,0 +1,20 @@
+<style>
+</style>
+
+	<select ng-model="selectTest" ng-options="selectbox.name for selectbox in selectboxList" ng-required="true" ng-change="selectOption();">
+	</select>
+	<br /><br />
+	<input type="text" ng-model="text1" />
+	<br /><br />
+	<div>
+		<button type="submit" style="width: 100px;" ng-click="click()">submit</button>
+	</div>
+	<br />
+	<div>
+		<button type="submit" style="width: 100px;" ng-click="goPage()">page change</button>
+	</div>
+	<br /><br />
+	<div id="result">
+		{{ result }}
+	</div>
+	<br />
