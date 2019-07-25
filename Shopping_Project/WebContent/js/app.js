@@ -43,4 +43,4 @@ myApp.config(function($routeProvider) {
 		{templateUrl: 'views/userInfoRewrite.html', controller: 'u_rewriteController'}
 	)
 
-})
+});
