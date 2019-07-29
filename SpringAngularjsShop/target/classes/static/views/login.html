@@ -1,4 +1,18 @@
 <style>
+	 .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 </style>
 
   <div class="container">
@@ -6,18 +20,23 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
-            <h5 class="card-title text-center">Sign In</h5>
-              <div class="form-label-group">
-                <label for="inputEmail">User ID</label>
-                <input type="text" ng-model="userId" class="form-control" placeholder="Password" />
-              </div>
-
-              <div class="form-label-group">
-                <label for="inputPassword">Password</label>
-                <input type="password" ng-model="userPassword" class="form-control" placeholder="Password" />
-              </div>
-
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" ng-click="login()">Sign in</button>
+                <form class="form-signin">
+					<img src ="img.png">
+							<hr>
+							<h1 class="h3 mb-3 font-weight-normal">YUMYUM FRUIT PARTY</h1>
+							<label for="inputEmail" class="sr-only">User ID</label>
+							<input type="email" id="inputEmail" class="form-control" placeholder="Email address" ng-model="inputId()" required autofocus><br>
+							<label for="inputPassword" class="sr-only">User PW</label>
+							<input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="inputPasswd()" required>
+							<div class="checkbox mb-3">
+								<label>
+								<input type="checkbox" value="remember-me"> remeber-ID
+								</label>
+							</div>
+								<button class="btn btn-lg btn-primary btn-block" ng-click ="submit()" type="submit">Sign in</button>
+								<button class="btn btn-lg btn-primary btn-block">Sign up</button>
+							<p class="mt-5 mb-3 text-muted">&copy; 2019-2019</p>
+						</form>
           </div>
         </div>
       </div>

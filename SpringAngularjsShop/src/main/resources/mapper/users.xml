@@ -8,8 +8,7 @@
     </select>
 
     <select id="getUserId" parameterType="com.spring.models.UserVO" resultType="com.spring.models.UserVO">
-        SELECT user_name AS name, user_id, passwd FROM userinfo WHERE user_id = #{user_id};
-        SELECT user_name AS name, user_id, passwd FROM userinfo WHERE userPasswd = #{passwd};
+        SELECT user_name AS name, user_id, passwd FROM userinfo WHERE user_id = #{user_id} AND userPasswd = #{passwd};
     </select>
 </mapper>
 

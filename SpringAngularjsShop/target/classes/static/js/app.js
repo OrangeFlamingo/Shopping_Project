@@ -15,6 +15,7 @@ sampleApp.config(function ($routeProvider) {
 		  , {templateUrl: 'views/result.html', controller: 'resultController'}
 	)
 
+
 	.otherwise({redirectTo: '/main'});
   
 });
