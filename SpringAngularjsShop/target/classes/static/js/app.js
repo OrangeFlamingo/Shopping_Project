@@ -15,6 +15,17 @@ sampleApp.config(function ($routeProvider) {
 		  , {templateUrl: 'views/result.html', controller: 'resultController'}
 	)
 
+	.when('/carts'
+		, {templateUrl: 'views/carts.html', controller: 'cartController'}
+	)
+
+	.when('/order'
+		, {templateUrl: 'view/orderResult.html', controller: 'orderController'}
+	)
+
+	.when('/finishOrder'
+		, {templateUrl: 'view/finishOrder.html', controller: 'orderController'}
+	)
 
 	.otherwise({redirectTo: '/main'});
   
