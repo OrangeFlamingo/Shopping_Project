@@ -9,9 +9,9 @@ logging:
 
 datasource:
   driver-class-name: com.mysql.jdbc.Driver
-  url: jdbc:mysql://localhost:3306/db_name?useUnicode=true&charaterEncoding=utf-8&interactiveClient=true&autoReconnect=true&autoReconnectForPools=true&useSSL=false
-  username: db_user
-  password: db_password
+  url: jdbc:mysql://localhost:3306/shoppingmall?useUnicode=true&charaterEncoding=utf-8&interactiveClient=true&autoReconnect=true&autoReconnectForPools=true&useSSL=false
+  username: manager
+  password: hamee
   initial-size: 10
   max-active: 10
   max-idle: 10

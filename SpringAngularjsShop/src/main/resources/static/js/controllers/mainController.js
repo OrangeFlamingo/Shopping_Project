@@ -23,16 +23,16 @@ sampleApp.controller('mainController', function($scope, $http, $location) {
 		var message = $scope.selectTest.code;
 		var result = $http({
 	    method : 'POST',
-	    url : '/api/test-rest',
+	    url : '/api/product',
 	    data: $.param({
-	          param1: $scope.text1,
+	          productCd: $scope.text1,
 	          param2: 'parameter 2'
 	      }),
 	      headers: {
 	          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
 	      }
 	  }).success(function(data) {
-	    $scope.result = data.message;
+	    $scope.result = "상품명 : " + data.productName + ", 가격 : " + data.price + ", 재고수 : " + data.stock;
 	  }).error(function(data, status, headers, config) {
 	    alert('error : status[' + status + ']');
 	  });

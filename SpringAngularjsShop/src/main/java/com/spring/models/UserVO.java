@@ -1,9 +1,7 @@
 package com.spring.models;
 
-import java.io.Serializable;
 
-@SuppressWarnings("serial")
-public class UserVO implements Serializable {
+public class UserVO {
 
   /** 사용자 ID */
   private String userId;

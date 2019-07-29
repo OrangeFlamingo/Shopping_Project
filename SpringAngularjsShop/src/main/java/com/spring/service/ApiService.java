@@ -16,9 +16,9 @@ public class ApiService {
 	public ApiResultVO testDB() {
 		ApiResultVO apiResultVO = new ApiResultVO();
 		// DB
-//		String now = spring1stMapper.getNow();
-		String result = "DB에서 조회하여 반환하도록 구성";
-		apiResultVO.setMessage(result);
+		String now = spring1stMapper.getNow();
+//		String result = "DB에서 조회하여 반환하도록 구성";
+		apiResultVO.setMessage(now);
 		return apiResultVO;
 	}
 }
