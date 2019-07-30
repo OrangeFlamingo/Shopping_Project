@@ -17,7 +17,7 @@ public class OrderVO   {
   public String getProductCd() {
     return productCd;
   }
-
+  
   /**
    * @param productCd the productCd to set
    */
