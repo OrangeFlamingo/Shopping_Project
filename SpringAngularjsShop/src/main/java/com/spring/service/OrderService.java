@@ -16,12 +16,12 @@ public class OrderService {
 	private OrdersMapper ordersMapper;
 	
 	public List<OrderVO> getProductList() {
-		List<OrderVO> results = ordersMapper.getProductList();
+		List<OrderVO> results = ordersMapper.getOrderList();
 		return results;
 	}
 	
 	public OrderVO getProductCd(OrderVO paramVO) {
-		OrderVO orderVO = ordersMapper.getProductCd(paramVO);
+		OrderVO orderVO = ordersMapper.getOrder(paramVO);
 		return orderVO;
 	}
 }

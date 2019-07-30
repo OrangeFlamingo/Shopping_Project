@@ -20,11 +20,11 @@ sampleApp.config(function ($routeProvider) {
 	)
 
 	.when('/order'
-		, {templateUrl: 'view/orderResult.html', controller: 'orderController'}
+		, {templateUrl: 'views/orderResult.html', controller: 'orderController'}
 	)
 
 	.when('/finishOrder'
-		, {templateUrl: 'view/finishOrder.html', controller: 'orderController'}
+		, {templateUrl: 'views/finishOrder.html', controller: 'orderController'}
 	)
 
 	.otherwise({redirectTo: '/main'});
