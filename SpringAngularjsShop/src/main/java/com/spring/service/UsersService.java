@@ -20,8 +20,8 @@ public class UsersService {
 		return results;
 	}
 	
-	public UserVO getuserId(UserVO paramVO) {
-		UserVO userVO = usersMapper.getuser_id(paramVO);
+	public UserVO getUseerInfo(UserVO paramVO) {
+		UserVO userVO = usersMapper.getUserInfo(paramVO);
 		return userVO;
 	}
 }

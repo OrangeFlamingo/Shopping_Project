@@ -27,6 +27,14 @@
 			"port": 9240,
 			"webRoot": "${workspaceFolder}",
 			"url": "http://127.0.0.1:61485/p/SpringAngularjsShop/src/main/resources/static/views/main.html?_cmAuth\u003dxvwkvspztm"
+		},
+		{
+			"name": "Launch Chrome 127.0.0.1",
+			"type": "chrome",
+			"request": "launch",
+			"port": 9234,
+			"webRoot": "${workspaceFolder}",
+			"url": "http://127.0.0.1:61485/p/SpringAngularjsShop/src/main/resources/static/js/controllers/?_cmAuth\u003dxvwkvspztm"
 		}
 	]
 }
