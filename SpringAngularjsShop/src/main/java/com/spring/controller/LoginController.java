@@ -1,15 +1,13 @@
 package com.spring.controller;
 
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.spring.models.UserVO;
 import com.spring.service.UsersService;
@@ -19,21 +17,40 @@ public class LoginController {
 
 	@Autowired
 	private UsersService service;
-	
-	@RequestMapping(path="/api/user", method=RequestMethod.POST)
-  public ResponseEntity<List<UserVO>> login(HttpServletRequest req, UserVO paramVO) {
-	List<UserVO> result = null;
-	
-	try {
-		
-		result = service.getUserId();
-		
-      } catch (Exception e) {
-      	return new ResponseEntity<List<UserVO>>(HttpStatus.INTERNAL_SERVER_ERROR);
-      }
-	return new ResponseEntity<List<UserVO>>(result, HttpStatus.OK);
-  }
 
-	
+	@RequestMapping(value = "/signin", method = RequestMethod.GET)
+	public void getSignin() throws Exception {
+	}
+
+	@RequestMapping(value = "/signin", method = RequestMethod.POST)
+	public String postSignin(UserVO vo, HttpServletRequest req, RedirectAttributes rttr) throws Exception {
+	   
+	 UserVO login = service.signup(vo);  
+	 HttpSession session = req.getSession();
+	 
+	 
+	 if(login != null) {
+	  session.setAttribute("member", login);
+	 } else {
+	  session.setAttribute("member", null);
+	  rttr.addFlashAttribute("msg", false);
+	  return "redirect:/member/signin";
+	 }  
+	 
+	 return "redirect:/";
+	}
+	  
+
+	@RequestMapping(value = "/signup", method = RequestMethod.GET)
+	public void getSignup() throws Exception {
+	}
+
+	@RequestMapping(value = "/signup", method = RequestMethod.POST)
+	public String postSignup(UserVO vo) throws Exception {
+
+	 service.signup(vo);
+
+	 return "redirect:/";
+	}
 	
 }

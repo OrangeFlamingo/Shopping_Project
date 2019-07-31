@@ -53,6 +53,9 @@ public class UserVO {
   public void setUserName(String userName) {
     this.userName = userName;
   }
+  
+  public void signup(UserVO vo) throws Exception {
+}
 
 }
 

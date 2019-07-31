@@ -11,6 +11,9 @@ public interface UsersMapper {
 
 	public List<UserVO> getUserId();
 	public UserVO getUserInfo(UserVO userVO);
+	
+
+	
 //	public int insert(String param);
 //	public int update(String param);
 //	public int delete(String param);

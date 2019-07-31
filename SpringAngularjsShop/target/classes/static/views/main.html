@@ -1,20 +1,104 @@
-<style>
-</style>
 
-	<select ng-model="selectTest" ng-options="selectbox.name for selectbox in selectboxList" ng-required="true" ng-change="selectOption();">
-	</select>
-	<br /><br />
-	<input type="text" ng-model="text1" />
-	<br /><br />
-	<div>
-		<button type="submit" style="width: 100px;" ng-click="click()">submit</button>
-	</div>
-	<br />
-	<div>
-		<button type="submit" style="width: 100px;" ng-click="goPage()">page change</button>
-	</div>
-	<br /><br />
-	<div id="result">
-		{{ result }}
-	</div>
-	<br />
+
+<div class="container">
+
+    <h1 class="my-4">냠냠 과일 파티
+		<small>상품 목록</small>
+	</h1>      
+
+	  <form class="form-inline my-2 my-lg-0">
+      	<input class="form-control mr-sm-2" type="text" placeholder="상품 검색">
+		 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="btn btn-primary" href="/"> 돌아가기</a>
+      </form>
+
+	  <hr>
+
+      <div class="row">
+         <div class="col-md-3" align="center">
+          <a href="/detail">
+            <img src="../images/img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3>{{}}</h3>
+          <p>{{}}</p>
+          <a class="btn btn-primary" href="/detail">상세보기</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+          <div class="col-md-3" align="center">
+          <a href="/detail">
+            <img src="../images/img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3>{{}}</h3>
+          <p>{{}}</p>
+          <a class="btn btn-primary" href="/detail">상세보기</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+         <div class="col-md-3" align="center">
+          <a href="/detail">
+            <img src="../images/img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3>{{}}</h3>
+          <p>{{}}</p>
+          <a class="btn btn-primary"href="/detail">상세보기</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+
+        <div class="col-md-3" align="center">
+          <a href="/detail">
+            <img src="../images/img.png">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3>{{}}</h3>
+          <p>{{}}</p>
+          <a class="btn btn-primary" href="/detail">상세보기</a>
+        </div>
+      </div>
+
+	  <hr>
+	  
+	  <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only"> 이전 </span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only"> 다음 </span>
+          </a>
+        </li>
+      </ul>
+
+	  
+
+    </div>

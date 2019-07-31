@@ -23,20 +23,29 @@
                 <form class="form-signin">
 					<img src ="../images/img.png">
 							<hr>
-							<h1 class="h3 mb-3 font-weight-normal">YUMYUM FRUIT PARTY</h1>
-							<label for="inputEmail" class="sr-only">User ID</label>
-							<input type="email" id="inputEmail" class="form-control" placeholder="Email address" ng-model="inputId()" required autofocus><br>
-							<label for="inputPassword" class="sr-only">User PW</label>
-							<input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="inputPasswd()" required>
+							<h1 class="h3 mb-3 font-weight-normal">뭔데 왜 안되는데</h1>
+							
+							<div class="input_area">
+										<label for="userId">아&nbsp; 이&nbsp; 디</label>
+										<input type="email" id="userId" name="userId" required="required" />      
+										</div>
+										
+										<div class="input_area">
+										<label for="userPass">패스워드</label>
+										<input type="password" id="userPass" name="userPass" required="required" />      
+							</div>
+							
 							<div class="checkbox mb-3">
 								<label>
 								<input type="checkbox" value="remember-me"> remeber-ID
 								</label>
 							</div>
-								<button class="btn btn-lg btn-primary btn-block" ng-click ="submit()" type="submit">Sign in</button>
-								<button class="btn btn-lg btn-primary btn-block">Sign up</button>
-							<p class="mt-5 mb-3 text-muted">&copy; 2019-2019</p>
-						</form>
+							
+							<button class="btn btn-lg btn-primary btn-block" ng-click ="submit()" type="submit">Sign in</button>
+							</form>
+							<br>
+							<a href="/reserve">Sign up</a>
+							<br>
           </div>
         </div>
       </div>

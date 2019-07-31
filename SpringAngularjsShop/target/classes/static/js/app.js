@@ -11,22 +11,26 @@ sampleApp.config(function ($routeProvider) {
 		  , {templateUrl: 'views/main.html', controller: 'mainController'}
 	)
 
-	.when('/result'
-		  , {templateUrl: 'views/result.html', controller: 'resultController'}
+	.when('/detail'
+		  , {templateUrl: 'views/product_detail.html', controller: 'ProductsController'}
 	)
 
-/** 	.when('/carts'
-		, {templateUrl: 'views/carts.html', controller: 'cartController'}
+	.when('/reserve'
+		, {templateUrl: 'views/Reservation.html', controller: 'loginController'}
+	)
+
+	.when('/carts'
+		, {templateUrl: 'views/Carts.html', controller: 'cartController'}
 	)
 
 	.when('/order'
-		, {templateUrl: 'views/orderResult.html', controller: 'orderController'}
+		, {templateUrl: 'views/orders.html', controller: 'orderController'}
 	)
 
-	.when('/finishOrder'
-		, {templateUrl: 'views/finishOrder.html', controller: 'orderController'}
+	.when('/orderlist'
+		, {templateUrl: 'views/orderlist.html', controller: 'orderController'}
 	)
-*/
+
 	.otherwise({redirectTo: '/main'});
   
 });

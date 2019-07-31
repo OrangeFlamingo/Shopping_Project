@@ -21,6 +21,10 @@
 	<base href="/">
 
 	<style>
+		body {
+			padding: 20px;
+		}
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -34,7 +38,17 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
+	  }
+	  
+		body { font-family:'맑은 고딕', verdana; padding:0; margin:0; }
+		ul { padding:0; margin:0; list-style:none;  }
+
+		aside { float:left; width:200px; }
+
+		aside ul li { text-align:center; margin-bottom:10px; float:left;}
+		aside ul li a {display:block; width:100%; padding: 10px;}
+		aside ul li a:hover {background:#ffaf11;}
+
 	</style>
 
     <!-- modual app -->
@@ -43,8 +57,14 @@
  <body>
 	<table border="1">
 		<tr>
-			<td colspan="2">
-				Top Menu
+			<td colspan="7">
+				<aside>
+				<ul>
+					<li><a href="/main">상품목록</a></li>
+					<li><a href="/carts">장바구니</a></li>
+					<li><a href="/orderlist">구매내역</a></li>
+				</ul>
+				</aside>
 			</td>
 		</tr>
 		<tr>
@@ -55,8 +75,13 @@
 			</td>
 		</tr>
 		<tr>
-			<td colspan="2">
-				Footer
+			<td colspan="7">
+				<aside>
+					<ul>
+						<li><a href="#">정보수정</a></li>
+						<li><a href="/">로그아웃</a></li>
+					</ul>	
+				</aside>	
 			</td>
 		</tr>
 	</table>
