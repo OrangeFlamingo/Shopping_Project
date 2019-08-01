@@ -24,4 +24,9 @@ public class ProductsService {
 		ProductsVO productsVO = productsMapper.getProduct(paramVO);
 		return productsVO;
 	}
+	
+	public ProductsVO getProductImg(ProductsVO paramVO) {
+		ProductsVO productsVO = productsMapper.getProductImg(paramVO);
+		return productsVO;
+	}
 }

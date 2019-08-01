@@ -3,15 +3,14 @@ package com.spring.models;
 
 public class UserVO {
 
-  /** 사용자 ID */
+  /** 사용자 info */
   private String userId;
-
-  /** 사용자 PW */
   private String userPassword;
-
-  /** 사용자명 */
   private String userName;
-
+  private String userNum;
+  private String address;
+  
+  
   /**
    * @return the userId
    */
@@ -26,36 +25,37 @@ public class UserVO {
     this.userId = userId;
   }
 
-  /**
-   * @return the userPassword
-   */
   public String getUserPassword() {
     return userPassword;
   }
 
-  /**
-   * @param userPassword the userPassword to set
-   */
   public void setUserPassword(String userPassword) {
     this.userPassword = userPassword;
   }
 
-  /**
-   * @return the userName
-   */
   public String getUserName() {
     return userName;
   }
 
-  /**
-   * @param userName the userName to set
-   */
   public void setUserName(String userName) {
     this.userName = userName;
   }
   
-  public void signup(UserVO vo) throws Exception {
-}
-
+  public String getUserNum() {
+	  return userNum;
+  }
+  
+  public void setUserNum(String userNum) {
+	  this.userNum = userNum;
+  }
+  
+  public String getAddress() {
+	  return address;
+  }
+  
+  public void setAddress(String address) {
+	  this.address = address;
+  }
+  
 }
 

@@ -10,6 +10,11 @@ public class ProductsVO   {
   /** 가격 */
   private int price;
 
+  /** 재고수 */
+  private int stock;
+  
+  private String productImg;
+
 	public String getProductCd() {
 		return productCd;
 	}
@@ -33,6 +38,21 @@ public class ProductsVO   {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	  
+
+	public int getStock() {
+		return stock;
+	}
+
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
+	
+	public String getproductImg() {
+		return productImg;
+	}
+	
+	public void setproductImg(String productImg) {
+		this.productImg = productImg;
+	}
 }
 

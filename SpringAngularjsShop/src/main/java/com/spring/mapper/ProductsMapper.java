@@ -11,8 +11,10 @@ public interface ProductsMapper {
 
 	public List<ProductsVO> getProductList();
 	public ProductsVO getProduct(ProductsVO productsVO);
+	public ProductsVO getProductImg(ProductsVO paramVO);
 //	public int insert(String param);
 //	public int update(String param);
 //	public int delete(String param);
+
 
 }

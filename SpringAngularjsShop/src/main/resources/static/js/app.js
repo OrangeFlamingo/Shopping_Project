@@ -12,11 +12,11 @@ sampleApp.config(function ($routeProvider) {
 	)
 
 	.when('/detail'
-		  , {templateUrl: 'views/product_detail.html', controller: 'ProductsController'}
+		  , {templateUrl: 'views/product_detail.html', controller: 'productsController'}
 	)
 
 	.when('/reserve'
-		, {templateUrl: 'views/Reservation.html', controller: 'loginController'}
+		, {templateUrl: 'views/reservation.html', controller: 'reservationController'}
 	)
 
 	.when('/carts'

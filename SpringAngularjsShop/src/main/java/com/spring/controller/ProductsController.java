@@ -22,8 +22,8 @@ public class ProductsController {
 	@Autowired
 	private ProductsService service;
 	
-	@RequestMapping(path="/api/products", method=RequestMethod.POST)
-  public ResponseEntity<List<ProductsVO>> products(HttpServletRequest req, @ModelAttribute("apiRequestVO") ApiRequestVO apiRequestVO) {
+	@RequestMapping(path="/products", method=RequestMethod.GET)
+  public ResponseEntity<List<ProductsVO>> products(HttpServletRequest req) {
 	List<ProductsVO> result = null;
 	
 	try {
@@ -35,7 +35,7 @@ public class ProductsController {
 	return new ResponseEntity<List<ProductsVO>>(result, HttpStatus.OK);
   }
 
-	@RequestMapping(path="/api/product", method=RequestMethod.POST)
+	@RequestMapping(path="/product", method=RequestMethod.POST)
 	  public ResponseEntity<ProductsVO> product(HttpServletRequest req, ProductsVO paramVO) {
 		ProductsVO result = null;
 		
@@ -48,4 +48,18 @@ public class ProductsController {
 		return new ResponseEntity<ProductsVO>(result, HttpStatus.OK);
 	  }
 
+	
+//	@RequestMapping(path="/detail", method=RequestMethod.GET)
+//	  public ResponseEntity<ProductsVO> detail(HttpServletRequest req, ProductsVO paramVo) {
+//		ProductsVO result = null;
+//		
+//		try {
+// //				result = service.getProductImg(paramVO);
+//			
+//	      } catch (Exception e) {
+//	      	return new ResponseEntity<ProductsVO>(HttpStatus.INTERNAL_SERVER_ERROR);
+//	      }
+//		return new ResponseEntity<ProductsVO>(result, HttpStatus.OK);
+//	  }
+//	
 }

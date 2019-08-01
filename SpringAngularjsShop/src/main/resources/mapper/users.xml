@@ -2,18 +2,25 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.spring.mapper.UsersMapper">
-    
-    <select id="getUserId" resultType="com.spring.models.UserVO">
-        SELECT * FROM userinfo ORDER BY user_id;
-    </select>
 
     <select id="getUserInfo" parameterType="com.spring.models.UserVO" resultType="com.spring.models.UserVO">
-        SELECT user_name AS name, user_id, passwd FROM userinfo WHERE user_id = #{user_id} AND userPasswd = #{passwd};
-    </select>
-    
-    <insert id="signup">
- 		insert into userinfo (user_id, passwd, name, phone_num, address) values(#{reg_userid}, #{reg_password}, #{reg_name), #{reg_phone}, #{reg_address}) 
+        SELECT name AS userName FROM userinfo WHERE user_id = #{userId} AND passwd = #{userPassword}
+    </select>    
+
+    <insert id="insertUser" parameterType="com.spring.models.UserVO">
+ 		insert into 
+ 			userinfo
+ 				(user_id, passwd, name, phone_num, address ) 
+ 			values 
+ 				(
+ 					#{userId}
+ 					, #{userPassword}
+ 					, #{userName}
+ 					, #{userNum}
+ 					, #{address}
+ 				) 
 	</insert>
+    
     
 </mapper>
 

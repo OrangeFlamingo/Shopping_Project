@@ -14,7 +14,7 @@ public interface UsersMapper {
 	
 
 	
-//	public int insert(String param);
+	public int insertUser(UserVO userVO);
 //	public int update(String param);
 //	public int delete(String param);
 

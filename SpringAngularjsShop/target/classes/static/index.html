@@ -21,6 +21,8 @@
 	<base href="/">
 
 	<style>
+		tr td { border:none; }
+
 		body {
 			padding: 20px;
 		}
@@ -40,14 +42,14 @@
         }
 	  }
 	  
-		body { font-family:'맑은 고딕', verdana; padding:0; margin:0; }
+		body { font-family:'맑은 고딕', verdana; padding:10px; margin:10px; }
 		ul { padding:0; margin:0; list-style:none;  }
 
 		aside { float:left; width:200px; }
 
-		aside ul li { text-align:center; margin-bottom:10px; float:left;}
-		aside ul li a {display:block; width:100%; padding: 10px;}
-		aside ul li a:hover {background:#ffaf11;}
+		nav ul li { text-align:center; margin-bottom:10px; float:left;}
+		nav ul li a {display:block; width:100%; padding: 10px;}
+		nav ul li a:hover {background:#ffaf11;}
 
 	</style>
 
@@ -58,17 +60,17 @@
 	<table border="1">
 		<tr>
 			<td colspan="7">
-				<aside>
+				<nav>
 				<ul>
 					<li><a href="/main">상품목록</a></li>
 					<li><a href="/carts">장바구니</a></li>
 					<li><a href="/orderlist">구매내역</a></li>
 				</ul>
-				</aside>
+				</nav>
 			</td>
 		</tr>
 		<tr>
-			<td width="100%">
+			<td width="1280px">
 				<ng-view>
 					
 				</ng-view>
@@ -76,12 +78,12 @@
 		</tr>
 		<tr>
 			<td colspan="7">
-				<aside>
+				<nav>
 					<ul>
 						<li><a href="#">정보수정</a></li>
 						<li><a href="/">로그아웃</a></li>
 					</ul>	
-				</aside>	
+				</nav>	
 			</td>
 		</tr>
 	</table>
@@ -89,6 +91,7 @@
 	<script type="text/javascript" src="js/app.js"></script>
 	
 	<script type="text/javascript" src="js/controllers/loginController.js"></script>
+	<script type="text/javascript" src="js/controllers/reservationController.js"></script>
 	<script type="text/javascript" src="js/controllers/mainController.js"></script>
 	<script type="text/javascript" src="js/controllers/resultController.js"></script>
 

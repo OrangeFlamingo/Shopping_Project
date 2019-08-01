@@ -23,16 +23,17 @@
                 <form class="form-signin">
 					<img src ="../images/img.png">
 							<hr>
-							<h1 class="h3 mb-3 font-weight-normal">뭔데 왜 안되는데</h1>
-							
+							<h1 class="h3 mb-3 font-weight-normal">냠냠 과일 파티</h1>
+							<label for="userId">과일들이 우리에게 먹히는건 정말  그들에게 행복한 일일까요?</label>
+							<br>
 							<div class="input_area">
 										<label for="userId">아&nbsp; 이&nbsp; 디</label>
-										<input type="email" id="userId" name="userId" required="required" />      
+										<input type="text" id="userId" name="userId" required="required" ng-model="userId" />      
 										</div>
 										
 										<div class="input_area">
 										<label for="userPass">패스워드</label>
-										<input type="password" id="userPass" name="userPass" required="required" />      
+										<input type="password" id="userPass" name="userPass" required="required" ng-model="userPassword" />      
 							</div>
 							
 							<div class="checkbox mb-3">
@@ -41,11 +42,11 @@
 								</label>
 							</div>
 							
-							<button class="btn btn-lg btn-primary btn-block" ng-click ="submit()" type="submit">Sign in</button>
+							<button class="btn btn-lg btn-primary btn-block" ng-click ="login()">Sign in</button>
 							</form>
 							<br>
-							<a href="/reserve">Sign up</a>
-							<br>
+							<button class="btn btn-lg  btn-block" ng-click ="goReservation()">Sign up</button>
+							<br><br><br>
           </div>
         </div>
       </div>

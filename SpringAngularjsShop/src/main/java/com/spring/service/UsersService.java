@@ -25,9 +25,8 @@ public class UsersService {
 		return userVO;
 	}
 		
-public UserVO signup(UserVO vo) throws Exception {
-//		sql.insert(namespace + ".signup", vo);  //얘가 왜 에러일까요? 그걸 저한테 물으면 어떡해요
-		return null;
+public void signup(UserVO vo) throws Exception {
+		usersMapper.insertUser(vo);  //얘가 왜 에러일까요? 그걸 저한테 물으면 어떡해요
 	}
 
 public UserVO signin(UserVO vo) {
