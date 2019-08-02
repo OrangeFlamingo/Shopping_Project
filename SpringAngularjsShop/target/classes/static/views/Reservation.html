@@ -11,28 +11,28 @@
 				<div class="login-group">
 					<div class="form-group">
 						<label> 아 이 디 </label>
-						<input type="text" class="form-control" id="reg_userid" name="reg_userid">
+						<input type="text" class="form-control" id="reg_userid" name="reg_userid" ng-model="reg_userid">
 					</div>
 					<div class="form-group">
 						<label>비밀번호</label>
-						<input type="password" class="form-control" id="reg_password" name="reg_password">
+						<input type="password" class="form-control" id="reg_password" name="reg_password" ng-model="reg_password">
 					</div>
 					<div class="form-group">
 						<label>이름</label>
-						<input type="text" class="form-control" id="reg_name" name="reg_name">
+						<input type="text" class="form-control" id="reg_name" name="reg_name" ng-model="reg_name">
 					</div>
 					
 					<div class="form-group">
 						<label>전화번호</label>
-						<input type="text" class="form-control" id="reg_phone" name="reg_phone">
+						<input type="text" class="form-control" id="reg_phone" name="reg_phone" ng-model="reg_phone">
 					</div>
 					<div class="form-group">
 						<label> 주 소 </label>
-						<input type="text" class="form-control" id="reg_address" name="reg_address">
+						<input type="text" class="form-control" id="reg_address" name="reg_address" ng-model="reg_address">
 					</div>
 					
 				</div>
-				<button type="submit" class="btn btn-primary">회원 가입 하기</button>
+				<button type="submit" class="btn btn-primary" ng-click="add()">회원 가입 하기</button>
 			</div>
 			<hr>
 			<div class="etc-login-form">

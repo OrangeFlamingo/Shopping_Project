@@ -4,7 +4,7 @@ myApp.config(function($routeProvider) {
 	$routeProvider
 
 	.when('/', 
-		{templateUrl: 'views/index.html', controller: 'indexController'}
+		{templateUrl: 'views/index.html', controller: 'IndexController'}
 	)
 
 	.when('/p_list', 
