@@ -1,1 +1,1 @@
-web: java -Deserver.port=$PORT $JAVA_OPTS -jar target/spring-project-0.7.0.jar
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/spring-project-0.7.0.jar
