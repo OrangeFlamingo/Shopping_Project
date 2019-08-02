@@ -37,24 +37,8 @@ sampleApp.controller('mainController', function($scope, $http, $location) {
 //		alert('new value : ' + newValue);
 	}, true);
 	
-	$scope.click = function() {
-		var message = $scope.selectTest.code;
-		var result = $http({
-	    method : 'POST',
-	    url : '/api/product',
-	    data: $.param({
-	          productCd: $scope.text1,
-	          param2: 'parameter 2'
-	      }),
-	      headers: {
-	          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-	      }
-	  }).success(function(data) {
-	    $scope.result = "상품명 : " + data.productName + ", 가격 : " + data.price + ", 재고수 : " + data.stock;
-	  }).error(function(data, status, headers, config) {
-	    alert('error : status[' + status + ']');
-	  });
-	    
+	$scope.detail = function(productCd) {
+		$location.url('/detail?productCd=' + productCd);	    
 	}
 
 	$scope.goPage = function() {

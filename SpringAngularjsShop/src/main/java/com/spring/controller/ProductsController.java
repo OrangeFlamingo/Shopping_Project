@@ -7,12 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.spring.models.ApiRequestVO;
 import com.spring.models.ProductsVO;
 import com.spring.service.ProductsService;
 
@@ -35,31 +33,16 @@ public class ProductsController {
 	return new ResponseEntity<List<ProductsVO>>(result, HttpStatus.OK);
   }
 
-	@RequestMapping(path="/product", method=RequestMethod.POST)
-	  public ResponseEntity<ProductsVO> product(HttpServletRequest req, ProductsVO paramVO) {
+	@RequestMapping(path="/product", method=RequestMethod.GET)
+	  public ResponseEntity<ProductsVO> product(HttpServletRequest req, ProductsVO paramVo) {
 		ProductsVO result = null;
 		
-		try {
-	        result = service.getProduct(paramVO);
-	
+	try {
+			result = service.getProduct(paramVo);
+		
 	      } catch (Exception e) {
 	      	return new ResponseEntity<ProductsVO>(HttpStatus.INTERNAL_SERVER_ERROR);
 	      }
 		return new ResponseEntity<ProductsVO>(result, HttpStatus.OK);
-	  }
-
-	
-//	@RequestMapping(path="/detail", method=RequestMethod.GET)
-//	  public ResponseEntity<ProductsVO> detail(HttpServletRequest req, ProductsVO paramVo) {
-//		ProductsVO result = null;
-//		
-//		try {
-// //				result = service.getProductImg(paramVO);
-//			
-//	      } catch (Exception e) {
-//	      	return new ResponseEntity<ProductsVO>(HttpStatus.INTERNAL_SERVER_ERROR);
-//	      }
-//		return new ResponseEntity<ProductsVO>(result, HttpStatus.OK);
-//	  }
-//	
+	}	
 }

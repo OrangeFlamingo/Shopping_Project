@@ -1,5 +1,4 @@
-sampleApp.controller('mainController', function($scope, $http, $location) {
-
+sampleApp.controller('productsController', function($scope, $http, $location, $routeParams) {
 	$scope.$on('$viewContentLoaded', function() {  
             $scope.fnSearch(); 
         }); 
@@ -7,9 +6,9 @@ sampleApp.controller('mainController', function($scope, $http, $location) {
 	$scope.fnSearch = function() {
 		var result = $http({
 	    method : 'GET',
-	    url : '/products'
+		url : '/product?productCd=' + $routeParams.productCd
 	  }).success(function(data) {
-		$scope.productList = data;
+		$scope.product = data;
 	
 	  }).error(function(data, status, headers, config) {
 	    alert('error : status[' + status + ']');
@@ -36,10 +35,6 @@ sampleApp.controller('mainController', function($scope, $http, $location) {
 //		alert('old value : ' + oldValue);
 //		alert('new value : ' + newValue);
 	}, true);
-	
-	$scope.detail = function(productCd) {
-		$location.url('/detail?productCd=' + productCd);	    
-	}
 
 	$scope.goPage = function() {
 		$location.url('/result')

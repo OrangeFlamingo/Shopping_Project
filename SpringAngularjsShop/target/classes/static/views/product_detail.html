@@ -9,11 +9,11 @@
 
       <div class="row">
         <div class="col-md-3" align="center">
-            <img src="../images/img.png">
+            <img ng-src="{{row.productImg}}" />
         </div>
         <div class="col-md-9">
-          <h3>사과 5kg</h3>
-          <p>사과는 너무 맛있어서 집에 가고 싶어했어요. 당신의 집에☆ <br> 뭐야 이 사과가 왜 저희 집에 있어요 우리 집 열쇠 돌려줘요</p>
+          <h3>{{product.productName}} </h3> <h3>가격 : {{product.price}} </h3>
+          <p>{{product.productName}}는 너무 맛있어서 집에 가고 싶어했어요. 당신의 집에☆ <br> 뭐야 이 {{product.productName}}가 왜 저희 집에 있어요 우리 집 열쇠 돌려줘요</p>
 		  <label> 주문 개수 :  </label>	 
 		  <select name = "sort">
 					<option value=""> - </option>

@@ -16,8 +16,8 @@ sampleApp.controller('reservationController', function($scope, $http, $location)
         }
     }).success(function(data) {
       $scope.result = data.userName;
-      alert($scope.result);
-      $location.url('/main')
+      alert('가입되었습니다.');
+      $location.url('/')
     }).error(function(data, status, headers, config) {
       alert('error : status[' + status + ']');
     });

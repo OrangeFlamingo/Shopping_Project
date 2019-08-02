@@ -12,9 +12,9 @@ sampleApp.controller('loginController', function($scope, $http, $location) {
 			}
 		}).success(function(data) {
 		//$scope.result = data.userName;
-		alert(data.userName);
+		alert(data.userName + '님 안녕하세요.');
 		if (data.userName) {
-			$location.url('/main')
+			$location.url('/main');
 		} else {
 			alert('ID 혹은 패스워드가 잘못되었습니다.');
 		}

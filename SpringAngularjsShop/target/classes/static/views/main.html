@@ -1,3 +1,6 @@
+<style>
+	td {padding:10px;}
+</style>
 <div class="container">
 
     <h1 class="my-4">냠냠 과일 파티
@@ -12,74 +15,15 @@
 
 	  <hr>
 
-	  <table border="1">
+	  <table border="none">
 		<tr data-ng-repeat="row in productList">
-			<!-- <td><img src="row.productImg"></td> -->
+			<td><img ng-src="{{row.productImg}}" /></td>
 			<td></td>
 			<td><h3>{{row.productName}}</h3></td>
 			<td>{{row.price}} 원</td>
-			<td> <button class="btn btn-primary" ng-click ="detail(row.productName)">상세보기</button> </td>
+			<td> <button class="btn btn-primary" ng-click ="detail(row.productCd)">상세보기</button> </td>
 		</tr>
 	</table>
-
-      <div class="row">
-         <div class="col-md-3" align="center">
-          <a href="/detail">
-            
-          </a>
-        </div>
-        <div class="col-md-9">
-          <h3>{{}}</h3>
-          <p>{{}}</p>
-          
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row">
-          <div class="col-md-3" align="center">
-          <a href="/detail">
-            <img src="../images/img.png">
-          </a>
-        </div>
-        <div class="col-md-9">
-          <h3>{{}}</h3>
-          <p>{{}}</p>
-          <a class="btn btn-primary" href="/detail">상세보기</a>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row">
-         <div class="col-md-3" align="center">
-          <a href="/detail">
-            <img src="../images/img.png">
-          </a>
-        </div>
-        <div class="col-md-9">
-          <h3>{{}}</h3>
-          <p>{{}}</p>
-          <a class="btn btn-primary" href="/detail">상세보기</a>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row">
-
-        <div class="col-md-3" align="center">
-          <a href="/detail">
-            <img src="../images/img.png">
-          </a>
-        </div>
-        <div class="col-md-9">
-          <h3>{{}}</h3>
-          <p>{{}}</p>
-          <a class="btn btn-primary" href="/detail">상세보기</a>
-        </div>
-      </div>
 
 	  <hr>
 	  

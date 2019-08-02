@@ -4,7 +4,7 @@
 <mapper namespace="com.spring.mapper.ProductsMapper">
     
     <select id="getProductList" resultType="com.spring.models.ProductsVO">
-        SELECT product_img_url AS productImg, product_name AS productName, price FROM product_info ORDER BY product_name
+        SELECT product_cd AS productCd, product_img_url AS productImg, product_name AS productName, price FROM product_info ORDER BY product_name
     </select>
 
     <select id="getProduct" parameterType="com.spring.models.ProductsVO" resultType="com.spring.models.ProductsVO">
@@ -12,6 +12,6 @@
     </select>
     
      <select id="getProductImg" parameterType="com.spring.models.ProductsVO">
-
      </select>   
+
 </mapper>
